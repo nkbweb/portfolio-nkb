@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="project-section.css">
+    <link rel="stylesheet" href="resume.css">
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Nishchay Bhardwaj's Portfolio</title>
+</head>
+<body>
+    <main>
+        
+        <!-- Topbar section -->
+        <div class="top-bar" data-sidebar >
+            <div class="info-top" >
+                
+                <!-- Profile section -->
+                <div class="profile"  >
+                    <div class="profile-pic-container">
+                        <img src="nkb1.png" class="profile-pic">
+                    </div>             
+                    <div class="profile-info">
+                        <h1 class="name" title="Nishchay">Nishchay Kumar Bhardwaj</h1>
+                        <h2 class="title"></h2>
+                    </div>
+                    <!-- Sidebar toggle button -->
+                    <button class="info-more-button" data-sidebar-btn>
+                        <i class="fas fa-chevron-down icon-group"></i>
+                    </button>
+                </div>  
+                
+                <!-- More info section -->
+                <div id="more-info" class="more-info">   
+                    <div class="separator"></div>                   
+                    
+                    <!-- Contact info -->
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <i class="fas fa-envelope icon-group"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Email</p>
+                                <a href="mailto:nishchaykumarbhardwaj18@gmail.com" class="contact-link">nishchaykumarbhardwaj18@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <i class="fas fa-phone icon-group"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Phone</p>
+                                <a href="tel:+91 9596742485" class="contact-link">+91 9596742485</a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <i class="fas fa-calendar-alt icon-group"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Birthday</p>
+                                <time datetime="2004-07-16" class="contact-link">July 16, 2004</time>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <div class="icon-box">
+                                <i class="fas fa-map-marker-alt icon-group"></i>
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-title">Location</p>
+                                <address class="contact-link">Gaya, Bihar, INDIA</address>
+                            </div>
+                        </li>
+                    </ul>
+                
+                    <!-- Social media links -->
+                    <div class="separator"></div>
+                    <div class="socials-container">
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About Me section -->
+        <div class="about content-section" id="about" style="display: block;" >
+            <div class="about-title" data-lazy>
+                <h1>Who I Am!</h1>
+            </div>
+            <div class="separator"></div>
+            <div class="about-text" data-lazy>
+                <p>
+                    I'm Nishchay Kumar Bhardwaj, a passionate Electronics and Communication Engineering student with a deep interest in technology and innovation.
+                </p>
+                <p>
+                    I'm driven by a curiosity for how things work and a desire to push the boundaries of what technology can achieve. My projects often focus on integrating intelligent systems into daily life, from robotics to IoT solutions.
+                </p>
+            </div>
+            
+            <!-- Buttons for CV and GitHub -->
+            <div class="about-buttons">
+                <button class="resume-button">
+                    My CV<span class="fas fa-download" style="color:white;font-size:12px; margin-left:10px;"></span>
+                </button>
+                <button class="github-button">
+                    Github <i class="fab fa-github"></i>
+                </button>
+            </div>
+            
+            <!-- Skills Slider section -->
+            <div class="about-title about-skills">
+                <h1>My Skills</h1>
+            </div>
+            
+            <div class="skill-section" data-lazy> 
+                <div class="slider-body">
+                    <div class="main-scroll-div">
+                        
+                     
+                        
+                        <!-- Image container -->
+                        <div class="cover">
+                            <div class="scroll-image">
+                                <div class="child">
+                                    <img class="child-img" src="js.png" alt="JavaScript">
+                                </div>
+                                <div class="child">
+                                    <img class="child-img" src="matlab.png" alt="JavaScript">
+                                </div>
+                                <div class="child">
+                                    <img class="child-img" src="blender.png" alt="JavaScript">
+                                </div>
+                                <div class="child">
+                                    <img class="child-img" src="c.png" alt="HTML">
+                                </div>
+                                <div class="child">
+                                    <img class="child-img" src="python.png" alt="Python">
+                                </div>
+                                <div class="child">
+                                    <img class="child-img" src="cpp.png" alt="C++">
+                                </div>
+                                <div class="child">
+                                    <img class="child-img" src="html.png" alt="HTML">
+                                </div>
+                                <div class="child">
+                                    <img class="child-img" src="css.png" alt="CSS">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Thin slider at the bottom -->
+                    </div>
+                     <div class="scroll-indicator"></div>
+       
+                </div>
+            </div>
+            
+         <!--  project section-->
+         <div class="about-title">
+            <h1>My Projects</h1>
+             <div class="project-container">
+                 <div class="project-item" data-lazy>
+                     <div class="project-image">
+                         <img src="weather.jpeg" class="weather-img">
+                     </div>            
+                     <h1 class="project-title" style="font-weight:500;">
+                         Weather App
+                     </h1>
+                     <div class="project-lang">
+                         <img class="lang-img" src="html.png">
+                         <img class="lang-img" src="css.png">
+                         <img class="lang-img" src="js.png">                    
+                     </div>
+                     <p class="project-info">
+                         The Weather App provides real-time weather updates for any city in the world. It includes a search function to input city names and displays current temperature, humidity, wind speed, and more.   </p>
+                     <div class="project-buttons">
+                         <button class="demo-button">Live Demo</button>
+                         <button class="project-github">Github</button>
+                     </div>
+                 </div>
+                 <div class="project-item" data-lazy >
+                     <div class="project-image">
+                         <img src="card.jpg" class="weather-img">
+                     </div>
+                     <h1 class="project-title" style="font-weight:500;">
+                         Card Game
+                     </h1>
+                     <div class="project-lang">
+                         <img class="lang-img" src="html.png">
+                         <img class="lang-img" src="css.png">
+                         <img class="lang-img" src="js.png">                    
+                     </div>
+                     <p class="project-info">
+                         The Card Matching Game is a fun and interactive game that tests a player's memory by matching pairs of cards. The game starts with a click of a button and includes visual effects such as transition animations </p>
+                     <div class="project-buttons">
+                         <button class="demo-button">Live Demo</button>
+                         <button class="project-github">Github</button>
+                     </div>
+                 </div>
+                 <div class="project-item" data-lazy>
+                     <div class="project-image">
+                         <img src="clock.jpeg" class="weather-img">
+                     </div>
+                     <h1 class="project-title" style="font-weight:500;">
+                         Analog Clock
+                     </h1>
+                     <div class="project-lang">
+                         <img class="lang-img" src="html.png">
+                         <img class="lang-img" src="css.png">
+                         <img class="lang-img" src="js.png">                    
+                     </div>
+                     <p class="project-info">
+                         Built with JavaScript, HTML, and CSS, this project showcases my understanding of time functions and front-end design. I’ve focused on creating an attractive interface that maintains a sleek and modern look.
+                     </p>
+                     <div class="project-buttons">
+                         <button class="demo-button">Live Demo</button>
+                         <button class="project-github">Github</button>
+                     </div>
+                 </div>
+                 <div class="project-item" data-lazy>
+                     <div class="project-image">
+                         <img src="club.jpeg" class="weather-img">
+                     </div>
+                     <h1 class="project-title" style="font-weight:500;">
+                         Club Website
+                     </h1>
+                     <div class="project-lang">
+                         <img class="lang-img" src="html.png">
+                         <img class="lang-img" src="css.png">
+                         <img class="lang-img" src="js.png">                    
+                     </div>
+                     <p class="project-info">
+                         The Electronics and Robotics Club (ERC) website is designed to promote the club's activities and serve as an informative platform for students interested in electronics and robotics.</p>
+                     <div class="project-buttons">
+                         <button class="demo-button">Live Demo</button>
+                         <button class="project-github">Github</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        </div>
+        
+        <!-- Navbar section -->
+        <div class="navbar" data-lazy>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <button class="navbar-link active" data-nav-link="about">About</button>
+                </li>
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link="resume">Resume</button>
+                </li>               
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link="blog">Blog</button>
+                </li>
+                <li class="navbar-item">
+                    <button class="navbar-link" data-nav-link="contact">Contact</button>
+                </li>
+                <li id="toggleButton">
+                    <span id="icon" class="sun"><i class="far fa-moon"></i>
+</i>
+
+
+
+
+
+                    </span> <!-- Sun icon for light mode -->
+                </li>
+            </ul>
+        </div>
+        
+        <!-- resume section   -->
+   <article class="resume content-section" data-page="resume" id="resume" style="display: none;">
+
+    <header>
+        <h2 class="h2 article-title">Resume</h2>
+    </header>
+    <div class="separator"></div>
+    <section class="timeline">
+
+        <div class="title-wrapper">
+            <div class="icon-box">
+                <i class="fas fa-graduation-cap icon-group"></i> <!-- Font Awesome graduation cap icon -->
+            </div>
+
+            <h3 class="h3">Education</h3>
+        </div>
+
+        <ol class="timeline-list">
+
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Central University Of Jammu</h4>
+                <span>2021 — Present</span>
+                <p class="timeline-text">
+                    Pursuing a Bachelor of Technology in Electronics and Communication Engineering (ECE).
+                </p>
+            </li>
+
+            <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Gyan Bharti Senior Secondary School</h4>
+                <span>2018 — 2021</span>
+                <p class="timeline-text">
+                    Completed secondary education with science str.
+                </p>
+            </li>
+
+        </ol>
+
+    </section>
+
+ <section class="timeline">
+
+    <div class="title-wrapper">
+        <div class="icon-box">
+            <i class="fas fa-briefcase icon-group"></i> <!-- Font Awesome briefcase icon for Experience -->
+        </div>
+
+        <h3 class="h3">Experience</h3>
+    </div>
+
+    <ol class="timeline-list">
+
+        <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Team Leader - IN-SPACe Model Rocketry Competition</h4>
+            <span>2024 — Present</span>
+            <p class="timeline-text">
+                Leading a team of 8 members in the competition, overseeing project timelines, managing resources, and ensuring effective communication among team members. Responsibilities include design and development of the rocket system, coordination with mentors, and presentation of project progress.
+            </p>
+        </li>
+
+        <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Intern - Electronics Company</h4>
+            <span>Summer 2023</span>
+            <p class="timeline-text">
+                Assisted in the design and testing of electronic circuits and systems, gaining hands-on experience in electronics. Collaborated with engineers on projects involving PCB design and component selection, and contributed to troubleshooting and problem-solving efforts.
+            </p>
+        </li>
+
+        <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Volunteer - Community Tech Workshops</h4>
+            <span>2022 — 2023</span>
+            <p class="timeline-text">
+                Helped organize workshops to teach electronics basics to high school students. Developed curriculum materials and hands-on projects, fostering a passion for technology and engineering in young learners.
+            </p>
+        </li>
+
+        <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Research Assistant - University Electronics Lab</h4>
+            <span>2022 — 2023</span>
+            <p class="timeline-text">
+                Conducted research on microcontroller applications in automation. Assisted professors with experimental setups, data collection, and analysis, contributing to published research on smart systems and IoT devices.
+            </p>
+        </li>
+
+        <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Project Coordinator - University Robotics Club</h4>
+            <span>2021 — 2022</span>
+            <p class="timeline-text">
+                Coordinated projects focused on building autonomous robots. Managed project timelines, organized team meetings, and led workshops on programming and robotics fundamentals. Enhanced teamwork and leadership skills among club members.
+            </p>
+        </li>
+
+        <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Technical Support Volunteer - Local Non-Profit</h4>
+            <span>2021</span>
+            <p class="timeline-text">
+                Provided technical support for computer and electronic equipment. Assisted with troubleshooting hardware and software issues, helping to improve the technology used in community outreach programs.
+            </p>
+        </li>
+
+        <li class="timeline-item">
+            <h4 class="h4 timeline-item-title">Participant - National Electronics Competition</h4>
+            <span>2021</span>
+            <p class="timeline-text">
+                Participated in a nationwide competition focused on electronics design and innovation. Collaborated with peers to create a prototype of an energy-efficient device, enhancing skills in creativity, problem-solving, and technical presentation.
+            </p>
+        </li>
+
+    </ol>
+
+</section>
+
+<section class="skill">
+
+    <h3 class="h3 skills-title">My Skills</h3>
+
+    <ul class="skills-list content-card">
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Embedded Systems</h5>
+                <data value="80">80%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Circuit Design</h5>
+                <data value="70">70%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Robotics</h5>
+                <data value="90">90%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Programming (C/C++)</h5>
+                <data value="50">50%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Microcontroller Programming</h5>
+                <data value="75">75%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">PCB Design</h5>
+                <data value="65">65%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Data Analysis (Python)</h5>
+                <data value="60">60%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Web Development (HTML, CSS, JS)</h5>
+                <data value="70">70%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+        </li>
+
+    </ul>
+</section>
+
+<section class="soft-skills ">
+
+    <h3 class="h3 skills-title">My Soft Skills</h3>
+
+    <ul class="skills-list content-card">
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Team Leadership</h5>
+                <data value="85">85%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Communication</h5>
+                <data value="80">80%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Problem Solving</h5>
+                <data value="90">90%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Time Management</h5>
+                <data value="75">75%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Adaptability</h5>
+                <data value="80">80%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Critical Thinking</h5>
+                <data value="70">70%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Collaboration</h5>
+                <data value="85">85%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+            </div>
+        </li>
+
+        <li class="skills-item">
+            <div class="title-wrapper">
+                <h5 class="h5">Creativity</h5>
+                <data value="70">70%</data>
+            </div>
+            <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+        </li>
+
+    </ul>
+
+  </section>
+</article>
+
+
+
+    <div class="content-section" id="blog" style="display: none;">
+        <h2>Blog</h2>
+        <p>Content for the Blog section.</p>
+    </div>
+    <div class="content-section" id="contact" style="display: none;">
+        <h2>Contact</h2>
+        <p>Content for the Contact section.</p>
+    </div>
+        
+        
+        
+        
+            
+    </main>   
+    
+    <script src="nkb.js"></script>
+</body>
+</html>

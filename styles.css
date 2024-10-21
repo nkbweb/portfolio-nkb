@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none; 
+}
+
+li { 
+    list-style: none; 
+}
+
+img, icon-group, a, button, time, span { 
+    display: block; 
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    color:#333333;
+}
+
+p{
+    color:#444444;
+}
+
+div{
+    background: #FBFBFF;
+}
+
+body {
+    background: white;
+    padding: 9px;
+}
+/* Add transitions for background and color changes */
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+.fa-moon{
+    font-size: 16px;
+}
+.fa-lightbulb{
+    color:#FFA726;
+    font-size: 16px;
+}
+
+.top-bar {
+    max-height: 119px;
+    overflow: hidden;
+    border: 1px solid #D3D3D3;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+    transition: max-height 0.5s ease-in-out;
+    margin-bottom: 15px;
+    
+}
+
+.top-bar.active{
+    max-height: 400px;
+}
+.profile {
+    display: flex;
+    gap: 15px;
+    position:relative;
+}
+
+.profile-pic-container {
+    width:80px;
+    overflow: hidden;
+    background: #EDEDED;
+    border: 1px solid #D3D3D3;
+    border-radius: 20px;
+}
+
+.profile-pic {
+    width: 80px;
+    filter: grayscale(20%);
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background: #D3D3D3;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    
+}
+
+.info-more-button {
+    position:absolute;
+    top:8px;
+    right:0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.name{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+    padding: 0px 5px;
+    letter-spacing: -0.25px;
+    margin-bottom: 10px;
+}
+
+.title{
+    background: #EDEDED;
+    font-size: 12px;
+    font-weight: 300;
+    width: max-content;
+    padding: 3px 12px;
+    border-radius: 12px;
+    animation: blink 0.7s step-end infinite; /* Cursor blinking */
+}
+
+.contact-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.contact-item {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  gap:16px;
+}
+
+.contact-title {
+  color: gray;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.contact-info :is(.contact-link, time, address) {
+  color: #444444;
+  font-size: 12px;
+}
+
+.contact-info address { font-style: normal; }
+
+.icon-box {
+    position: relative;
+    background: #EDEDED;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: black;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-right: 10px;
+}
+
+.icon-group{
+    color:black;
+}
+
+.social-list{
+    display: flex;
+    align-items: center;
+}
+
+.social-list .fab{
+    margin-right: 10px;
+    color:#333333;
+    font-size: 18px;
+}
+
+
+/*<!-- about section -->*/
+
+.about {
+    border: 1px solid #D3D3D3;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.about-title h1{
+    font-size: 16px;          /* Large font size for emphasis */
+    font-weight: 600;/* Bold font for strong impact */
+    letter-spacing: 1px;
+}
+
+.about-text p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.about-buttons {
+    display: flex;               /* Use flexbox for horizontal alignment */
+    justify-content: flex-start;     /* Center the buttons horizontally */
+    gap: 10px;                  /* Space between buttons */
+    margin-top: 20px;           /* Space above the button group */
+}
+
+.resume-button, .github-button {
+    position: relative;          /* Position relative for overlay */
+    padding: 10px 20px;         /* Padding for buttons */
+    font-size: 14px;            /* Font size for buttons */
+    font-weight: 500;           /* Semi-bold text */
+    border: none;               /* Remove default border */
+    border-radius: 4px;         /* Rounded corners */
+    cursor: pointer;             /* Pointer cursor on hover */
+    color: #ffffff;              /* Default text color for Resume button */
+    background-color: #444444;   /* Dark gray background for Resume button */
+    overflow: hidden;            /* Hide overflow for the filling effect */
+    transition: color 0.4s;      /* Smooth transition for text color */
+}
+
+/* Github button default state */
+.github-button {
+    background: white;
+    border: 1px solid #444444; /* White background for Github button */
+    color: #444444;               /* Dark gray text color */
+}
+
+/* Filling effect */
+.resume-button::after,
+.github-button::after {
+    content: "";                  /* Pseudo-element content */
+    position: absolute;           /* Positioning for the filling effect */
+    bottom: 0;                   /* Start filling from the bottom */
+    left: 0;
+    right: 0;
+    height: 100%;                /* Full height for the fill */
+    background-color: #ffffff;   /* Fill color for Resume button */
+    transform: translateY(100%); /* Start off-screen */
+    transition: transform 0.4s;  /* Smooth transition for the fill */
+    z-index: 0;                  /* Send it to the back */
+}
+#icon {
+    margin-left: 10px;
+    font-size: 18px; /* Size of the icon */
+    color: #333; /* Icon color for light mode */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* navbar */
+
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(237, 237, 227, 0.01); 
+  backdrop-filter: blur(8px);
+  border: 1px solid #D3D3D3;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px -3px 7px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+
+.navbar-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navbar-link {
+    background: transparent;
+    border:none;
+    color: black;
+    font-weight: 300;
+    font-size:14px ;
+    padding: 20px 10px;
+    transition: color 0.5s ease-in-out;
+}
+
+.navbar-link:hover,
+.navbar-link:focus { color:red; }
+
+
+
+
+/* dark
+    mode  starts */
+
+body.dark-mode {
+    background: hsl(0, 0%, 7%); /* Dark mode background */
+    color: #ffffff;            /* Dark mode text color */
+}
+
+
+body.dark-mode h1, 
+body.dark-mode h2 {
+    color: hsl(0, 0%, 98%);            /* White color for headings in dark mode */
+}
+
+body.dark-mode div,
+body.dark-mode .resume{
+    background:hsl(240, 2%, 12%);
+}
+
+body.dark-mode .top-bar,
+body.dark-mode .profile-pic-container,
+body.dark-mode .about,
+body.dark-mode .resume,
+body.dark-mode .project-item{
+    border:1px solid hsl(0, 0%, 22%);
+}
+
+body.dark-mode .separator {
+    background: hsl(0, 0%, 22%);
+}
+
+body.dark-mode .title {
+    background: linear-gradient(
+    to bottom right, 
+    hsl(240, 1%, 25%) 3%, 
+    hsl(0, 0%, 19%) 97%
+  );
+}
+
+body.dark-mode .profile-pic-container{
+    background: linear-gradient(
+    to bottom right, 
+    hsl(240, 1%, 25%) 3%, 
+    hsl(0, 0%, 19%) 97%
+  );
+}
+body.dark-mode .fab{
+    color:#FFA726;
+}
+
+body.dark-mode .icon-box{
+    background: linear-gradient(to bottom right,hsl(240, 1%, 25%) 3%,hsl(0, 0%, 19%) 97%);
+    
+}
+
+body.dark-mode .icon-group{
+    color:#FFA726;
+}
+body.dark-mode .contact-title{
+    color:hsla(0, 0%, 84%, 0.7);
+}
+body.dark-mode .contact-link{
+    color:hsl(0, 0%, 98%);
+}
+
+body.dark-mode p{
+    color:hsl(0, 0%, 80%);
+    font-weight: 100;
+}
+
+body.dark-mode .navbar{
+    background: hsla(240, 1%, 17%, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid hsl(0, 0%, 22%);
+}
+body.dark-mode .navbar-link{
+    color:hsl(0, 0%, 84%);
+}
+
+body.dark-mode .project-github {
+    background: whitesmoke; /* No background color */
+}
+.theme-toggle {
+    position: fixed;            /* Fix position of toggle button */
+    top: 80px;                 /* Distance from the top */
+    right: 20px;               /* Distance from the right */
+}
+
+#toggle-button {
+    padding: 10px 20px;        /* Padding for the button */
+    font-size: 16px;           /* Font size */
+    cursor: pointer;            /* Pointer cursor on hover */
+    border: none;              /* Remove default border */
+    border-radius: 5px;        /* Rounded corners */
+    background-color: #444444; /* Dark background for the button */
+    color: #ffffff;            /* White text for the button */
+    transition: background-color 0.3s; /* Smooth transition for button */
+}
+
+#toggle-button:hover {
+    background-color: #666666; /* Lighten button color on hover */
+}
+
+[data-lazy] {
+    opacity: 0;
+    transform: translateY(30px); /* Initial position for subtle animation */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+}
+
+.lazy-loaded {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Reset position */
+}
+
+
+.content-section {
+    display: none; /* Hide all sections by default */
+    opacity: 0; /* Set initial opacity to 0 for fade effect */
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+.content-section.active {
+    display: block; /* Show the section when active */
+    opacity: 1; /* Set opacity to 1 for fade effect */
+}

@@ -1,0 +1,80 @@
+.project-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive column setup */
+  gap: 20px;
+  margin:20px 0px;
+}
+
+.project-item{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+     /* Background color for items */
+    border: 1px solid #D3D3D3; /* Border for items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Internal padding */
+    text-align: center; /* Center the text */
+    transition: transform 0.3s;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image{
+  margin-bottom: 7px;
+  width:70%;
+  height: 150px;
+  
+}
+
+.weather-img{
+  border-radius: 20px;
+  object-fit: cover;
+  width: 100%; /* image will scale to the container width */
+  height: 100%; 
+}
+.project-lang{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  margin-bottom:10px;
+  margin-top: 5px;
+}
+.lang-img{
+  width:40px;
+  height: 40px;
+}
+.project-item p{
+  font-size: 12px;
+  text-align: justify;
+
+}
+.project-buttons {
+    margin-top: 15px;
+    display: flex; /* Align buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    justify-content: center;
+    align-content: center;
+}
+
+
+.demo-button,
+.project-github {
+    padding: 8px 16px; /* Padding for the buttons */
+    border: 1px solid black; /* Thin black border */
+    color: black; /* Text color */
+    cursor: pointer; /* Change cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    font-size: 15px; /* Font size */
+    width: 120px; /* Fixed width for both buttons */
+    border-radius: 45px; /* Rounded corners */
+    text-align: center; /* Center align text */
+}
+.demo-button{
+  background: #444444;
+  color:white;
+}
+.project-github{
+  background: white;
+}
