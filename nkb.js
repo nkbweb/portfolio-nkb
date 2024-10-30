@@ -57,19 +57,13 @@ sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); }
 // script.js
 
 // Get the toggle button and body element
-const toggleButton = document.getElementById('toggleButton');
+const toggleButton = document.getElementById('switch');
 const body = document.body;
-const icon = document.getElementById('icon');
 
 toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode'); // Toggle the dark-mode class on body
 
-    // Change icon based on the current mode
-    if (body.classList.contains('dark-mode')) {
-        icon.innerHTML = '<i class="far fa-lightbulb"></i>'; // Moon icon for dark mode
-    } else {
-        icon.innerHTML = '<i class="far fa-moon"></i>'; // Sun icon for light mode
-    }
+  
 });
 
 
